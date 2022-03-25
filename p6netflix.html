@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+
+    <head>
+        <!--Le "head" contien les méta donnée ( des donner qui ne sont pas visible a l'écrant )-->
+        <title>JustStreamIt </title>
+        <meta charset="utf-8"> 
+        <meta name="author" content="Ghost" >
+        <meta name="description" content="Page netflix pour le p6 Openclassroom" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <script src="P7.JS" defer> </script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+        <meta property="og:type" content="streaming"/>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    </head>
+    
+    
+    <body>
+        <!-- Le "body" contien les données afficher à l'ecrant-->
+        <nav> 
+            <div class="gauche">
+                <img src="16004298163529_P5.png" id="logo-acceuil" height="40">
+                <div class="onglets">
+                    <button id="btn-acceuil" href="" > Accueil </button>
+                    <button id="btn-acceuil" href=""> Série TV </button>
+                    <button id="btn-acceuil" href="" > Films </button>
+                    <button id="btn-acceuil" href="" > Programmes originaux </button>
+                    <button id="btn-acceuil" href="" > Ajouts récents </button>
+                    <button id="btn-acceuil" href="" > Ma liste </button>
+
+
+                </div>
+            </div>
+            
+            
+            <div class="droite">
+                
+
+            
+            
+            </div>
+            
+          
+
+        </nav>
+        <div class="modale" id="modale_meilleur_film">
+            <div class="boite" id="boite_modale_meilleur_film">
+                <img src="close.png" id="fermer_modale" alt="toto">
+                <img src="play-button.png" id="button-play" alt="">
+                
+                <img src="https://m.media-amazon.com/images/M/MV5BNDEyYTA5OWEtYjNiYS00MGZlLThjYzEtMTc1Zjk2NDRmZmYxXkEyXkFqcGdeQXVyNzIwNTQyMw@@._V1_UY268_CR1,0,182,268_AL_.jpg" id="image-meilleur-film"  alt="" > <br>
+                <div id="detail">
+                <h2>Detail du film</h2>
+                <span > Titre : </span> <br>
+                <span > Genre :</span> <br>
+                <span > Date :</span> <br>
+                <span > Rang :</span> <br>
+                <span > Score :</span> <br>
+                <span > Réalisateur :</span> <br>
+                <span > Acteur :</span> <br>
+                <span > Durée :</span> <br>
+                <span > Pays :</span> <br>
+                <span > Résultat au box office :</span> <br>
+                </div>
+                <div class="resume" id="resume_block">
+                <span >Résumé du film :</span> <br>
+                </div>
+           
+        
+        
+                   
+                    
+                
+                    
+            </div>
+        </div>
+
+
+            
+
+        
+        <main> 
+            <section>
+                
+                <div class="image" id="meilleur-film">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDEyYTA5OWEtYjNiYS00MGZlLThjYzEtMTc1Zjk2NDRmZmYxXkEyXkFqcGdeQXVyNzIwNTQyMw@@._V1_UY268_CR1,0,182,268_AL_.jpg" class="mask-image1"
+                    alt="image du meilleur film" />
+                    <h2 class="titre-categorie">Meilleur film</h2>
+                    <button class="lire">Lire</button>
+                    <button class="plus-d-info">PLus d'infos</button>
+
+
+                    </div>
+                
+                
+                <div>                 
+                    <p class="description-meilleur-film">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero atque cupiditate provident reiciendis fugit sit dolorem molestiae, accusamus voluptatum magnam adipisci ad minus enim ducimus fugiat tempora repellendus suscipit error!</p>                     
+                </div>
+
+                <h2 class="titre-categorie">Films les mieux notés</h2>
+                <div class="netflix-slider">
+                    
+                    <div class="swiper-container">   
+                        
+                        
+                        <div id="meilleur-carrousel" class="carrousel-data">
+                        
+                        <img class="prev swiper-button" src="left.png"> 
+                            <img class="image-carrousel" src="https://m.media-amazon.com/images/M/MV5BNDEyYTA5OWEtYjNiYS00MGZlLThjYzEtMTc1Zjk2NDRmZmYxXkEyXkFqcGdeQXVyNzIwNTQyMw@@._V1_UY268_CR1,0,182,268_AL_.jpg" alt="">
+                            <img class="image-carrousel" src="https://m.media-amazon.com/images/M/MV5BNDEyYTA5OWEtYjNiYS00MGZlLThjYzEtMTc1Zjk2NDRmZmYxXkEyXkFqcGdeQXVyNzIwNTQyMw@@._V1_UY268_CR1,0,182,268_AL_.jpg" alt="">
+                            <img class="image-carrousel" src="https://m.media-amazon.com/images/M/MV5BNDEyYTA5OWEtYjNiYS00MGZlLThjYzEtMTc1Zjk2NDRmZmYxXkEyXkFqcGdeQXVyNzIwNTQyMw@@._V1_UY268_CR1,0,182,268_AL_.jpg" alt="">
+                            <img class="image-carrousel" src="https://m.media-amazon.com/images/M/MV5BNDEyYTA5OWEtYjNiYS00MGZlLThjYzEtMTc1Zjk2NDRmZmYxXkEyXkFqcGdeQXVyNzIwNTQyMw@@._V1_UY268_CR1,0,182,268_AL_.jpg" alt="">
+                        <img class="next swiper-button" src="right.png"> </button> 
+                        </div>
+                     
+
+                           
+                            
+                        
+                        
+                    </div> 
+                </div>
+                    <h2 class="titre-categorie" >Film d'actions</h2>
+                    <div class="swiper-container">   
+                        
+                        
+                        <div id="carrousel-categorie1" class="carrousel-data">
+                        
+                        <img class="prev swiper-button" src="left.png"> 
+                            <img class="image-carrousel" src="https://m.media-amazon.com/images/M/MV5BNDEyYTA5OWEtYjNiYS00MGZlLThjYzEtMTc1Zjk2NDRmZmYxXkEyXkFqcGdeQXVyNzIwNTQyMw@@._V1_UY268_CR1,0,182,268_AL_.jpg" alt="">
+                            <img class="image-carrousel" src="https://m.media-amazon.com/images/M/MV5BNDEyYTA5OWEtYjNiYS00MGZlLThjYzEtMTc1Zjk2NDRmZmYxXkEyXkFqcGdeQXVyNzIwNTQyMw@@._V1_UY268_CR1,0,182,268_AL_.jpg" alt="">
+                            <img class="image-carrousel" src="https://m.media-amazon.com/images/M/MV5BNDEyYTA5OWEtYjNiYS00MGZlLThjYzEtMTc1Zjk2NDRmZmYxXkEyXkFqcGdeQXVyNzIwNTQyMw@@._V1_UY268_CR1,0,182,268_AL_.jpg" alt="">
+                            <img class="image-carrousel" src="https://m.media-amazon.com/images/M/MV5BNDEyYTA5OWEtYjNiYS00MGZlLThjYzEtMTc1Zjk2NDRmZmYxXkEyXkFqcGdeQXVyNzIwNTQyMw@@._V1_UY268_CR1,0,182,268_AL_.jpg" alt="">
+                        <img class="next swiper-button" src="right.png"> 
+                        </div>
+
+                    <h2 class="titre-categorie" >Film historique</h2>
+                    <div class="swiper-container">   
+                        
+                        
+                        <div id="carrousel-categorie2" class="carrousel-data">
+                        
+                        <img class="prev swiper-button" src="left.png"> 
+                            <img class="image-carrousel" src="https://m.media-amazon.com/images/M/MV5BNDEyYTA5OWEtYjNiYS00MGZlLThjYzEtMTc1Zjk2NDRmZmYxXkEyXkFqcGdeQXVyNzIwNTQyMw@@._V1_UY268_CR1,0,182,268_AL_.jpg" alt="">
+                            <img class="image-carrousel" src="https://m.media-amazon.com/images/M/MV5BNDEyYTA5OWEtYjNiYS00MGZlLThjYzEtMTc1Zjk2NDRmZmYxXkEyXkFqcGdeQXVyNzIwNTQyMw@@._V1_UY268_CR1,0,182,268_AL_.jpg" alt="">
+                            <img class="image-carrousel" src="https://m.media-amazon.com/images/M/MV5BNDEyYTA5OWEtYjNiYS00MGZlLThjYzEtMTc1Zjk2NDRmZmYxXkEyXkFqcGdeQXVyNzIwNTQyMw@@._V1_UY268_CR1,0,182,268_AL_.jpg" alt="">
+                            <img class="image-carrousel" src="https://m.media-amazon.com/images/M/MV5BNDEyYTA5OWEtYjNiYS00MGZlLThjYzEtMTc1Zjk2NDRmZmYxXkEyXkFqcGdeQXVyNzIwNTQyMw@@._V1_UY268_CR1,0,182,268_AL_.jpg" alt="">
+                        <img class="next swiper-button" src="right.png"> 
+                        </div>
+
+                    <h2 class="titre-categorie" >Film fantasy</h2>
+                    <div class="swiper-container">   
+                            
+                            
+                        <div id="carrousel-categorie3" class="carrousel-data">
+                            
+                        <img class="prev swiper-button" src="left.png"> 
+                            <img class="image-carrousel" src="https://m.media-amazon.com/images/M/MV5BNDEyYTA5OWEtYjNiYS00MGZlLThjYzEtMTc1Zjk2NDRmZmYxXkEyXkFqcGdeQXVyNzIwNTQyMw@@._V1_UY268_CR1,0,182,268_AL_.jpg" alt="">
+                            <img class="image-carrousel" src="https://m.media-amazon.com/images/M/MV5BNDEyYTA5OWEtYjNiYS00MGZlLThjYzEtMTc1Zjk2NDRmZmYxXkEyXkFqcGdeQXVyNzIwNTQyMw@@._V1_UY268_CR1,0,182,268_AL_.jpg" alt="">
+                            <img class="image-carrousel" src="https://m.media-amazon.com/images/M/MV5BNDEyYTA5OWEtYjNiYS00MGZlLThjYzEtMTc1Zjk2NDRmZmYxXkEyXkFqcGdeQXVyNzIwNTQyMw@@._V1_UY268_CR1,0,182,268_AL_.jpg" alt="">
+                            <img class="image-carrousel" src="https://m.media-amazon.com/images/M/MV5BNDEyYTA5OWEtYjNiYS00MGZlLThjYzEtMTc1Zjk2NDRmZmYxXkEyXkFqcGdeQXVyNzIwNTQyMw@@._V1_UY268_CR1,0,182,268_AL_.jpg" alt="">
+                            <img class="next swiper-button" src="right.png"> 
+                        </div>
+            </section>
+        
+        
+        </main>
+
+        
+        <footer>
+            <h1 class="logo-bas">JustStreamIt</h1>
+        </footer>
+
+        
+
+</body>
+
+
+</html>

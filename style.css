@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+
+body {
+    font-family: 'Oswald' , sans-serif;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ';
+
+}
+
+
+nav{
+    position: fixed;
+    display: flex;
+    
+  
+    color: black;
+    opacity: 200%;
+    align-items: center;
+
+    width: 100px;
+
+
+    z-index: 1000;
+
+
+}
+#btn-acceuil{
+    margin-left: -10px;
+    height: auto;
+    width: 100px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    background-color: #fff;
+    cursor: pointer;
+}
+#btn-acceuil:hover {
+    color: white;
+    background-color: rgb(0, 0, 0);
+
+}
+
+#logo-acceuil {
+    
+    height: 75px;
+
+}
+
+nav .gauche{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+section,main {
+    width: 100%;
+}
+
+.titre-categorie {
+
+    text-align: center;
+    right: 470px;
+ 
+    
+}
+
+.description-meilleur-film{
+    text-align: center;
+}
+
+section .image{
+    background-color: rgb(255, 255, 255);
+
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: relative;
+    top: -30px;
+    text-align: center;
+}
+
+
+section .image img{
+    width: 50%;
+    height: 50%;
+    max-height: 600px;
+}
+
+
+.mask-image1 {
+    -webkit-mask-image: linear-gradient(to bottom, transparent 1%, black 90%);
+    mask-image: linear-gradient(to bottom, transparent 1%, black 90%);
+  }
+
+nav .gauche .onglets{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+
+   
+}
+
+
+/* Carrousel */
+
+.carrousel-data{
+    justify-content: space-between;
+}
+
+
+.carrousel-data{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+      
+}
+
+.carrousel-data img{
+    flex: 5;
+
+    max-width: 20em;
+}
+
+
+.image-carrousel:hover{
+    cursor: pointer;
+    height: 480px;
+    
+
+}
+
+
+#meilleur-film .lire {
+    background-color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: black;
+}
+
+#meilleur-film .plus-d-info {
+    background-color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: black;
+    
+    
+}
+
+.swiper-container {
+
+    box-align: center;
+
+}
+
+.swiper-container .swiper-button:hover{
+    cursor: pointer;
+    background-color: rgba(97, 97, 97, 0.356);
+}
+
+
+.swiper-container .swiper-button {
+
+    position: relative;
+
+    height: 150px;
+
+
+
+    align-items: center;
+
+
+ 
+}
+
+.prev {
+    left: 80px;
+}
+.next {
+    right: 80px;
+}
+
+
+
+
+/* Debut de la modale*/
+
+.modale {
+    position: fixed;
+    top: -10px;
+    right: 10px;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+
+
+    margin: 10px;
+
+        
+    background-color: #acacacc2;
+
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.boite {
+    position: relative;
+    padding: 50px;
+    height: auto;
+    width: 322px;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    right: 75px;
+    min-height: 200px;
+}
+.boite #detail {
+    margin-top: -335px;
+    height: 100%;
+    margin-right: -40px;
+  
+  
+
+}
+#boite_modale_meilleur_film .boite .fermer {
+    position: absolute;
+    top: 20px;
+
+
+}
+.modale .boite #button-play{
+    position: absolute;
+    height: 10%;
+    top: 30%;
+    z-index: 100;
+    left: 117%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(255, 255, 255);
+
+}
+#video-play {
+    z-index: 150;
+    
+}
+
+.modale .boite #button-play:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.199);
+    
+}
+.modale .boite img {
+    left: 100%;
+    position: relative;
+    top: -50px;
+    padding: 10px;
+    background-color: white;
+
+    border-top-right-radius: 20px;
+    
+
+
+}
+
+
+
+.modale .boite #fermer_modale{
+    left: 100%;
+    position: relative;
+    top: -285px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    
+
+
+}
+.modale .boite #fermer_modale:hover{
+    background-color: gray;
+
+
+}
+
+.modale .boite .resume {
+    right: -60%;
+    position: absolute;
+    margin-right: 13px;
+    right: -212px;
+    padding: 12px;
+    background-color: white;
+    border-bottom-right-radius: 20px;
+    bottom: -0%;
+    width: 180px;
+    height: 80px;
+    margin-top: -150px;
+
+    
+
+}
+
+.logo-bas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+/* fin de la barre de navigation */
+
